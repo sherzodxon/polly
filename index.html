@@ -1,14 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Polly</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="/img/title.svg" type="image/x-icon">
 </head>
+
 <body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis rerum, aspernatur, iure eaque explicabo excepturi recusandae obcaecati voluptatibus eligendi blanditiis exercitationem quas soluta odio illo quibusdam ea nihil officia molestiae. Tempora autem ex harum culpa veritatis, delectus necessitatibus earum.</h1>
-<script src="js/main.js"></script>
+    <header class="header">
+        <div class="header-container container">
+            <p class="header-logo">Studio polly</p>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item">
+                        <a href="index.html" class="header-item-link">shop</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="index.html" class="header-item-link">about</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="index.html" class="header-item-link">journal</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="header-button-wrapper">
+                <button class="header-search-button">search</button>
+                <button class="header-shop-button"></button>
+                <p class="header-shop-status">(0)</p>
+            </div>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="intro-container container">
+            <h2 class="intro-text">
+                Products <br> with a story
+            </h2>
+            <a href="index.html" class="intro-link">watch our studio tour</a>
+        </div>
+    </section>
+    <main>
+        <section class="info">
+            <div class="info-container container">
+                <p class="info-text">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Ut <br> lobortis ante
+                    sit amet neque tristique rutrum. Nullam a suscipit ex.</p>
+            </div>
+        </section>
+        <section class="bestsellers">
+            <div class="bestsellers-container container">
+                <div class="bestsellers-products">
+                    <h2 class="bestsellers-title">our bestsellers</h2>
+                    <ul class="bestsellers-list">
+                        <li class="bestsellers-item">
+                            <img src="img/price1.jpg" alt="products" width="324" height="424"
+                                class="bestsellers-item-img">
+                            <p class="bestsellers-item-name">Fruit Bowl</p>
+                            <p class="bestsellers-item-price">$ 47.24 USD</p>
+                        </li>
+                        <li class="bestsellers-item">
+                            <img src="img/price2.jpg" alt="products" width="324" height="424"
+                                class="bestsellers-item-img">
+                            <p class="bestsellers-item-name">Coffee Cup</p>
+                            <p class="bestsellers-item-price bestsellers-item-price-del"><del>$ 65.62 USD</del></p>
+                            <p class="bestsellers-item-price">$ 30.50 USD</p>
+                        </li>
+                        <li class="bestsellers-item">
+                            <img src="img/price3.jpg" alt="products" width="324" height="424"
+                                class="bestsellers-item-img">
+                            <p class="bestsellers-item-name">Tall Vase</p>
+                            <p class="bestsellers-item-price">$ 46.58 USD</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <a href="index.html" class="bestsellers-link">see all products</a>
+            </div>
+        </section>
+        <section class="bowl">
+            <ul class="bowl-first-list ">
+                <li class="bowl-item">
+                    <p class="bowl-text bowl-first-item-text ">Vases</p>
+                    <span class="bowl-star bowl-first-item-star"></span>
+                </li>
+                <li class="bowl-item">
+                    <p class="bowl-text">mugs</p>
+                    <span class="bowl-star"></span>
+                </li>
+                <li class="bowl-item">
+                    <p class="bowl-text">plates</p>
+                    <span class="bowl-star"></span>
+                </li>
+
+            </ul>
+            <ul class="bowl-second-list">
+                <li class="bowl-item">
+                    <p class="bowl-text">Vases</p>
+                    <span class="bowl-star"></span>
+                </li>
+                <li class="bowl-item">
+                    <p class="bowl-text">bowls</p>
+                    <span class="bowl-star"></span>
+                </li>
+                <li class="bowl-item">
+                    <p class="bowl-text">plates</p>
+                    <span class="bowl-star"></span>
+                </li>
+            </ul>
+        </section>
+        <section class="shop">
+            <div class="shop-container container">
+                <h2 class="shop-title">shop by category</h2>
+                <ul class="shop-list">
+                    <li class="shop-item">
+                        <img src="/img/shop1.jpg" width="435" height="284" alt="Vases" class="shop-img">
+                        <p class="shop-item-name">Vases</p>
+                    </li>
+                    <li class="shop-item">
+                        <img src="/img/shop2.jpg" width="435" height="284" alt="Vases" class="shop-img">
+                        <p class="shop-item-name">Cups</p>
+                    </li>
+                    <li class="shop-item">
+                        <img src="/img/shop3.jpg" width="435" height="284" alt="Vases" class="shop-img">
+                        <p class="shop-item-name">Plates</p>
+                    </li>
+                   
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

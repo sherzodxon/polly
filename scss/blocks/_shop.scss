@@ -1,0 +1,36 @@
+.shop {
+    padding-bottom: 25px;
+    margin-left: 3px;
+    border-bottom: 1px solid #111010;
+}
+
+.shop-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    text-transform: uppercase;
+    margin-bottom: 62px;
+}
+
+.shop-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shop-item {
+    background: rgba(202, 181, 235, 1);
+    padding-bottom: 47px;
+}
+
+.shop-item-name {
+    font-size: 32px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 42px;
+}
+.shop-img{
+    border-bottom: 1px solid #111010;
+}

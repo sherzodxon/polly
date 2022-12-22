@@ -1,0 +1,111 @@
+.bestsellers {
+    padding-top: 75px;
+    padding-bottom: 82px;
+    background: rgba(241, 235, 228, 1);
+    border-bottom: 1px solid #111010;
+    margin-left: 2px;
+
+}
+
+.bestsellers-products {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bestsellers-title {
+    width: 302px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    text-transform: uppercase;
+    position: relative;
+    &::after{
+        position: absolute;
+        width: 120px;
+        height: 132px;
+        content: '';
+        background: url(../../img/title-after.png) no-repeat center center;
+      top: 136px;
+      left: 45px;
+    }
+}
+
+.bestsellers-list {
+    width: 1040px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.bestsellers-item {
+    text-align: center;
+    position: relative;
+
+    &::after {
+        width: 96px;
+        height: 96px;
+        position: absolute;
+        border-radius: 50%;
+        border: 1px solid rgba(17, 16, 16, 1);
+        background: #FF9B3D;
+        content: 'sale';
+        top: 0;
+        left: 0;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 38px;
+        display: none;
+    }
+
+    &:hover {
+        &::after {
+            display: block;
+            cursor: pointer;
+            transition: 3000ms ease-in all;
+        }
+
+        .bestsellers-item-img {
+            opacity: 0.7;
+        }
+
+        .bestsellers-item-name {
+            color: #FF9B3D;
+        }
+    }
+}
+.bestsellers-item-img{
+    border: 1px solid #111010;
+}
+
+.bestsellers-item-name {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.bestsellers-item-price {
+    font-size: 16px;
+    line-height: 24px;
+}
+.bestsellers-item-price-del{
+    color: rgba(17, 16, 16, 0.7);
+
+}  
+
+.bestsellers-link {
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #111010;
+    display: block;
+    width: 183px;
+    margin-left: auto;
+    margin-top: 32px;
+}
