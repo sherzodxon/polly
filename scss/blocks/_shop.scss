@@ -29,8 +29,23 @@
     line-height: 48px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 42px;
+    margin-top: 47px;
 }
 .shop-img{
+    display: block;
     border-bottom: 1px solid #111010;
+    cursor: pointer;
+}
+
+.shop-img-hidden{
+    display: none;
+}
+.shop-img-active{
+    display: block;
+    position: fixed;
+    width: 820px;
+    height: 500px;
+    left: calc(50% - 460px);
+    bottom: 8vh;
+    z-index: 2;
 }
