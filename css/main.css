@@ -345,7 +345,8 @@ body {
   z-index: 1;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -367,7 +368,11 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
@@ -400,6 +405,52 @@ h1, h2, h3, h4, p {
 
 .body-hidden {
   overflow: hidden;
+}
+
+.input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  width: 100%;
+  padding: 19px 120px 19px 27px;
+  background: #FFFFFF;
+  border: 1px solid #111010;
+  border-radius: 30px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.input::-moz-placeholder {
+  color: #000000;
+}
+.input:-ms-input-placeholder {
+  color: #000000;
+}
+.input::placeholder {
+  color: #000000;
+}
+.input:focus {
+  outline: 2px solid #FF9B3D;
+  border: 1px solid transparent;
+}
+
+.form {
+  position: relative;
+  width: 98%;
+  margin-right: 4px;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 25px;
+  padding: 25px 35px;
+  background: #FFDB5B;
+  border: 1px solid #111010;
+  border-radius: 1600px;
+  position: absolute;
+  top: -6px;
+  right: -2px;
 }
 
 .container {
@@ -802,7 +853,7 @@ h1, h2, h3, h4, p {
 
 .testimonials {
   margin-top: 174px;
-  margin-bottom: 176px;
+  margin-bottom: 161px;
 }
 
 .testimonials-container {
@@ -843,6 +894,7 @@ h1, h2, h3, h4, p {
   line-height: 25px;
   width: 247px;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 .benefits {
@@ -850,6 +902,7 @@ h1, h2, h3, h4, p {
   background: rgb(255, 219, 91);
   border-top: 1px solid #111010;
   border-bottom: 1px solid #111010;
+  padding-bottom: 62px;
 }
 
 .benefits-container {
@@ -860,6 +913,7 @@ h1, h2, h3, h4, p {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .benefits-text {
@@ -876,11 +930,13 @@ h1, h2, h3, h4, p {
   letter-spacing: 0.48px;
   text-transform: uppercase;
   margin-top: 23px;
+  margin-bottom: 15px;
 }
 
 .articles {
   margin: 160px 0px;
   margin-left: 3px;
+  margin-bottom: 128px;
 }
 
 .articles-title {
@@ -903,6 +959,7 @@ h1, h2, h3, h4, p {
   background: rgb(202, 181, 235);
   position: relative;
   border: 1px solid #111010;
+  margin-bottom: 25px;
 }
 
 .articles-item-img {
@@ -923,4 +980,226 @@ h1, h2, h3, h4, p {
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.collection {
+  padding: 78px 0px;
+  border-top: 1px solid #111010;
+  position: relative;
+  background: rgb(241, 235, 228);
+  border-bottom: 1px solid #111010;
+  padding-bottom: 85px;
+}
+.collection::after {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  content: "";
+  background: #111010;
+  left: calc(50% + 3px);
+  top: 0;
+}
+
+.collection-container {
+  width: 1142px;
+  margin-right: 179px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection-date-wrapper {
+  padding: 60px 139px 67px 139px;
+  text-align: center;
+  border: 1px solid rgb(17, 16, 16);
+  background: #FF9B3D;
+  border: 1px solid #111010;
+  border-radius: 1600px 1600px 0px 0px;
+}
+
+.collection-new-text {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.collection-date {
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.collection-connect-wrapper {
+  text-align: center;
+  width: 380px;
+  margin-top: 25px;
+}
+
+.collection-connect-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.collection-connect-text {
+  font-size: 18px;
+  line-height: 25px;
+  width: 234px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+.scenes {
+  margin-top: 154px;
+  margin-bottom: 137px;
+}
+
+.scenes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scenes-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+
+.scenes-link {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #111010;
+}
+
+.scenes-list {
+  width: 100%;
+  margin-top: 62px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.scenes-item {
+  margin-bottom: 20px;
+}
+.scenes-item:nth-child(even) {
+  margin-top: 75px;
+}
+
+.scenes-item-img {
+  border-radius: 50%;
+  border: 1px solid #111010;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 55px;
+  background: rgb(202, 181, 235);
+  border-top: 1px solid #111010;
+}
+
+.footer-title {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 203px;
+}
+
+.footer-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-connect-wrapper {
+  width: 379px;
+}
+
+.footer-connect-title {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.footer-form {
+  width: 100%;
+}
+
+.footer-input {
+  width: 100%;
+}
+
+.footer-lists-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 573px;
+  margin-right: 123px;
+  flex-wrap: wrap;
+  margin-top: 7px;
+}
+
+.footer-item {
+  margin-bottom: 16px;
+  margin-right: 10px;
+}
+
+.footer-link {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #111010;
+}
+
+.footer-bottom-unit {
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-connect-by-wrapper {
+  display: flex;
+}
+
+.footer-list {
+  margin-bottom: 30px;
+}
+
+.footer-made-by-text {
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin-right: 4px;
+  color: #111010;
+}
+
+.footer-powered-by-text {
+  font-size: 15px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.footer-mess-list {
+  display: flex;
+  margin-right: 16px;
+}
+
+.footer-mess-item {
+  margin-right: 32px;
+}
+.footer-mess-item:last-child {
+  margin-right: 0;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,45 @@
+.scenes {
+    margin-top: 154px;
+    margin-bottom: 137px;
+   
+}
+
+.scenes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scenes-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    text-transform: uppercase;
+}
+
+.scenes-link {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #111010;
+}
+.scenes-list{
+    width: 100%;
+    margin-top: 62px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.scenes-item{
+    &:nth-child(even){
+        margin-top: 75px;
+    }
+    margin-bottom: 20px;
+   
+}
+.scenes-item-img{
+    border-radius: 50%;
+    border: 1px solid #111010;
+}
