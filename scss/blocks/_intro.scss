@@ -47,3 +47,46 @@
     border-radius: 1600px;
 
 }
+@media only screen and(max-width:1300px){
+.intro-text{
+    width: 600px;
+}
+}
+@media only screen and(max-width:800px){
+    .intro{
+        margin-bottom: 80px;
+    }
+    .intro-text{
+        font-size: 86px;
+        width: 400px;
+    }
+    .intro-container{
+        padding-left: 30px;
+    }
+}
+@media only screen and(max-width:600px){
+    
+    .intro-text{
+        font-size: 70px;
+    }
+    .intro-container{
+        &::after{
+            right: 10px;
+            width: 80px;
+            height: 80px;
+            bottom: -40px;
+        }
+    }
+}
+@media only screen and(max-width:500px){
+    .intro-text{
+        font-size: 60px;
+        width: 300px;
+        line-height: 80px;
+        
+    }
+    .intro-container{
+        padding-bottom: 130px;
+    }
+    
+}
