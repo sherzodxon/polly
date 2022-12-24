@@ -70,3 +70,63 @@
     margin: 0 auto;
     margin-bottom: 38px;
 }
+@media only screen and(max-width:1400px){
+    .collection-container{
+        margin: 0 auto;
+    }
+}
+@media only screen and(max-width:1150px){
+    .collection-connect-wrapper{
+        margin-right: 20px;
+    }
+    .collection{
+        &::after{
+            display: none;
+        }
+    }
+}
+@media only screen and(max-width:1000px){
+    .collection-container{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .collection-new-text{
+        width: 250px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .collection-date{
+        width: 250px;
+    }
+    .collection-connect-wrapper{
+        margin: 0 auto;
+    }
+    .collection-date-wrapper{
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+@media only screen and(max-width:555px){
+    .collection-date-wrapper {
+        padding: 50px 99px 47px 99px;
+    }
+}
+@media only screen and(max-width:460px){
+    .collection-date-wrapper {
+        padding: 50px 70px 30px 70px;
+    }
+    .collection-date, .collection-new-text{
+        font-size: 30px;
+        line-height: 34px;
+        width: 200px;
+    }
+    .collection-connect-wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .collection-connect-title{
+        font-size: 38px;
+    }
+    
+
+}

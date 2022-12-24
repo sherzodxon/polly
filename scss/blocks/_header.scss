@@ -1,16 +1,18 @@
 @keyframes animate {
-    0%{
-        transform:translateX(100%);
+    0% {
+        transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX((0%));
     }
 }
+
 .header {
     padding: 19px 0px 22px 0px;
     border-bottom: 1px solid #111010;
     margin-bottom: 4px;
-    
+
 }
 
 .header-container {
@@ -71,7 +73,8 @@
     font-size: 16px;
     line-height: 16px;
 }
-.header-hamburger-button{
+
+.header-hamburger-button {
     display: none;
     position: absolute;
     width: 32px;
@@ -79,79 +82,98 @@
     background: url(../../img/hamburger.svg) no-repeat center center;
     right: 0;
 }
-.header-hamburger-close-button{
-    background: url(../../img/close.svg) no-repeat  center center   ;
+
+.header-hamburger-close-button {
+    background: url(../../img/close.svg) no-repeat center center;
 }
-.header-modal{
+
+.header-modal {
     display: none;
 }
-.header-nav-modal{
+
+.header-nav-modal {
     display: none;
 }
-@media only screen and(max-width:1260px){
-    .header-container{
+
+@media only screen and(max-width:1260px) {
+    .header-container {
         padding: 0;
         position: relative;
     }
 }
-@media only screen and(max-width:960px){
-    .header-nav-item{
+
+@media only screen and(max-width:960px) {
+    .header-nav-item {
         margin-right: 65px;
     }
-    .header-search-button{
+
+    .header-search-button {
         margin-right: 15px;
     }
 }
-@media only screen and(max-width:760px){
-    .header-nav-item{
+
+@media only screen and(max-width:760px) {
+    .header-nav-item {
         margin-right: 35px;
-       
+
     }
-    .header-item-link{
+
+    .header-item-link {
         font-size: 14px;
     }
-    .header-search-button{
+
+    .header-search-button {
         font-size: 14px;
     }
 }
-@media only screen and(max-width:630px){
-    .header-nav-item{
+
+@media only screen and(max-width:630px) {
+    .header-nav-item {
         margin-right: 25px;
     }
 }
-@media only screen and(max-width:600px){
-    .header-nav{
+
+@media only screen and(max-width:600px) {
+    .header-nav {
         display: none;
     }
-    .header-button-wrapper{
+
+    .header-button-wrapper {
         display: none;
     }
-    .header-logo{
+
+    .header-logo {
         margin: 0 auto;
     }
-    .header-hamburger-button{
+
+    .header-hamburger-button {
         display: block;
     }
-    .header-nav--active{
+
+    .header-nav--active {
         animation: animate ease 900ms;
         display: block;
         position: absolute;
         top: 130px;
         right: 25%;
         z-index: 2;
-        .header-nav-list{
+
+        .header-nav-list {
             flex-direction: column;
             text-align: center;
         }
-        .header-nav-item{
+
+        .header-nav-item {
             margin-right: 0;
             margin-bottom: 20px;
         }
-        .header-item-link{
+
+        .header-item-link {
             font-size: 18px;
         }
     }
-    .header-button-wrapper--active{
+
+    .header-button-wrapper--active {
         animation: animate ease 900ms;
         display: block;
         position: absolute;
@@ -161,41 +183,49 @@
         text-align: center;
         align-items: center;
         z-index: 2;
-        .header-search-button{
+
+        .header-search-button {
             margin-right: 12px;
         }
-        .header-shop-button{
+
+        .header-shop-button {
             margin-right: 12px;
         }
     }
-    .header-modal--active{
+
+    .header-modal--active {
         display: block;
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         top: 70px;
         right: 0;
         background-color: #111010;
         opacity: 0.8;
         z-index: 1;
+        overflow: hidden;
     }
-    .header-nav-modal--active{
+
+    .header-nav-modal--active {
         animation: animate ease 600ms;
         display: block;
         z-index: 1;
-      width: 70%;
-      height: 100vh;
-      right: 0;
-      position: absolute;
-      background: #FFDB5B;
-      top: 70px;
+        width: 70%;
+        height: 100%;
+        right: 0;
+        position: absolute;
+        background: #FFDB5B;
+        top: 70px;
+        overflow-x: hidden;
     }
 }
-@media only screen and(max-width:360px){
-    .header-button-wrapper--active{
+
+@media only screen and(max-width:360px) {
+    .header-button-wrapper--active {
         right: 50px;
     }
-    .header-nav--active{
+
+    .header-nav--active {
         right: 18%;
     }
 }

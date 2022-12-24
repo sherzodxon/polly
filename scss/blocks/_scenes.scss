@@ -43,3 +43,30 @@
     border-radius: 50%;
     border: 1px solid #111010;
 }
+@media only screen and(max-width:1300px){
+    .scenes-list{
+        justify-content: space-around;
+    }
+}
+@media only screen and(max-width:790px){
+    .scenes-header{
+        flex-direction: column;
+    }
+}
+@media only screen and(max-width:500px){
+   .scenes-title{
+    font-size: 38px;
+   }
+   .scenes-item{
+    &:nth-child(even){
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    margin-bottom: 20px;
+   }
+}
+@media only screen and(max-width:385px){
+   .scenes-title{
+    font-size: 30px;
+   }
+}

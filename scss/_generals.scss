@@ -13,6 +13,8 @@ body {
   color: #111010;
   position: relative;
   z-index: 1;
+  overflow-y: auto;
+
 
 }
 
@@ -21,6 +23,10 @@ ol {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.body{
+  overflow: auto;
+
 }
 
 button {
@@ -74,6 +80,9 @@ p {
 }
 
 .body-hidden {
+  overflow-y: hidden;
+}
+.body-hidden-hamburger{
   overflow: hidden;
 }
 
@@ -132,5 +141,12 @@ p {
 @media only screen and(max-width:1260px){
   body{
     max-width: 100%;
+    overflow: auto;
+  }
+  .body-hidden{
+    overflow: hidden;
+
+    
   }
 }
+

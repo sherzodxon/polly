@@ -1,5 +1,5 @@
 .shop {
-    padding-bottom: 25px;
+    padding-bottom: 5px;
     margin-left: 3px;
     border-bottom: 1px solid #111010;
 }
@@ -22,6 +22,7 @@
 .shop-item {
     background: rgba(202, 181, 235, 1);
     padding-bottom: 47px;
+    margin-bottom: 20px;
 }
 
 .shop-item-name {
@@ -43,9 +44,65 @@
 .shop-img-active{
     display: block;
     position: fixed;
-    width: 820px;
-    height: 500px;
-    left: calc(50% - 460px);
-    bottom: 8vh;
+    width: 64%;
+    height: auto;
+    left: 18%;
+    bottom: 2%;
     z-index: 2;
+}
+@media only screen and(max-width:1390px){
+    .shop-list{
+        justify-content: space-around;
+    }
+}
+@media only screen and(max-width:1000px){
+.shop-img-active{
+    bottom: 5%;
+}
+
+}
+@media only screen and(max-width:910px){
+    .shop-title{
+        text-align: center;
+    }
+}
+@media only screen and(max-width:800px){
+    .shop-img-active{
+        bottom: 14%;
+        width: 88%;
+        left: 6%;
+    }
+}
+@media only screen and(max-width:550px){
+    .shop-img-active{
+        bottom: 28%;
+    }
+}
+@media only screen and(max-width:500px){
+    .shop-title{
+        font-size: 38px;
+        line-height: 43px;
+    }
+    .shop-img{
+        width: 100%;
+        height: auto;
+    }
+    .shop-item{
+        width: 80%;
+        padding-bottom: 27px;
+    }
+    .shop-item-name{
+        margin-top: 27px;
+        font-size: 25px;
+    }
+    .shop-img-active{
+        bottom: 33%;
+        width: 90%;
+        left: 5%;
+    }
+}
+@media only screen and(max-width:400px){
+    .shop-title{
+        font-size: 30px;
+    }
 }

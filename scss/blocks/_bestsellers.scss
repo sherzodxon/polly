@@ -1,6 +1,6 @@
 .bestsellers {
     padding-top: 75px;
-    padding-bottom: 82px;
+    padding-bottom: 62px;
     background: rgba(241, 235, 228, 1);
     border-bottom: 1px solid #111010;
     margin-left: 2px;
@@ -20,14 +20,15 @@
     line-height: 53px;
     text-transform: uppercase;
     position: relative;
-    &::after{
+
+    &::after {
         position: absolute;
         width: 120px;
         height: 132px;
         content: '';
         background: url(../../img/title-after.png) no-repeat center center;
-      top: 136px;
-      left: 45px;
+        top: 136px;
+        left: 45px;
     }
 }
 
@@ -42,6 +43,7 @@
 .bestsellers-item {
     text-align: center;
     position: relative;
+    margin-bottom: 20px;
 
     &::after {
         width: 96px;
@@ -65,7 +67,7 @@
         &::after {
             display: block;
             cursor: pointer;
-            transition: 3000ms ease-in all;
+
         }
 
         .bestsellers-item-img {
@@ -77,7 +79,8 @@
         }
     }
 }
-.bestsellers-item-img{
+
+.bestsellers-item-img {
     border: 1px solid #111010;
 }
 
@@ -93,10 +96,11 @@
     font-size: 16px;
     line-height: 24px;
 }
-.bestsellers-item-price-del{
+
+.bestsellers-item-price-del {
     color: rgba(17, 16, 16, 0.7);
 
-}  
+}
 
 .bestsellers-link {
     font-size: 20px;
@@ -108,4 +112,81 @@
     width: 183px;
     margin-left: auto;
     margin-top: 32px;
+}
+
+@media only screen and(max-width:1380px) {
+    .bestsellers-list {
+        width: 800px;
+        justify-content: space-around;
+    }
+
+    .bestsellers-title {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and(max-width:1050px) {
+    .bestsellers-list {
+        width: 600px;
+    }
+
+    .bestsellers-item-img {
+        width: 224px;
+        height: 293px;
+    }
+}
+
+@media only screen and(max-width:830px) {
+    .bestsellers-products {
+        flex-direction: column;
+    }
+
+    .bestsellers-list {
+        width: 100%;
+    }
+
+    .bestsellers-title {
+        margin: 0;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 80px;
+
+        &::after {
+            top: 10px;
+            transform: rotate(-305deg);
+            left: -30px;
+
+        }
+    }
+}
+
+@media only screen and(max-width:600px) {
+    .bestsellers-title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 30px;
+       
+        &::after {
+            display: none;
+        }
+    }
+
+    .bestsellers-item {
+        &:hover{
+        &::after {
+            display: none;
+        }
+    }
+    }
+}
+
+@media only screen and(max-width:500px) {
+    .bestsellers-list {
+        flex-direction: column;
+    }
+
+    .bestsellers-link {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
 }

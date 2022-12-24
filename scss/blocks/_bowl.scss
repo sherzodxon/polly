@@ -45,3 +45,76 @@
 .bowl-first-item-star {
     margin-right: 28px;
 }
+@media only screen and(max-width:1000px){
+    .bowl-text{
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .bowl-star{
+        width: 84px;
+        height: 100px;
+    }
+}
+@media only screen and(max-width:800px){
+    .bowl-first-list ,.bowl-second-list{
+        flex-direction: column;
+      margin: 0;
+    }
+    .bowl-text{
+        padding: 0;
+       
+    }
+    .bowl-first-item-text{
+        margin-right: 15px;
+    }
+    .bowl-first-item-star{
+        margin: 0;
+    }
+    .bowl-star{
+        margin: 0;
+    }
+    .bowl-item{
+        margin:  0;
+        text-align: left;
+        width: 60%;
+        justify-content: space-between;
+        margin:  0 auto;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and(max-width:650px){
+    .bowl-text{
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .bowl-star{
+        width: 74px;
+        height: 74px;
+    }
+}
+@media only screen and(max-width:550px){
+    .bowl-text{
+        font-size: 57px;
+        line-height: 57px;
+    }
+    .bowl-star{
+        width: 60px;
+        height: 60px;
+    }
+}
+@media only screen and(max-width:440px){
+    .bowl-text{
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+@media only screen and(max-width:400px){
+    .bowl-text{
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .bowl-star{
+        width: 50px;
+        height: 50px;
+    }
+}
